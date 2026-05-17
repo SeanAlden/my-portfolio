@@ -11,9 +11,18 @@ export default function Education() {
         </div>
         
         <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row md:items-center justify-between">
-          <div>
+          {/* <div>
             <h2 className="text-2xl font-bold text-gray-900">{education.university}</h2>
             <p className="text-lg text-gray-600 mt-1">{education.degree}</p>
+          </div> */}
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900">{education.university}</h2>
+            <div className="flex items-center gap-3 mt-1">
+              <p className="text-lg text-gray-600">{education.degree}</p>
+              <span className="bg-gray-100 text-gray-700 text-sm px-2 py-0.5 rounded-md font-medium border border-gray-200">
+                IPK: {education.gpa}
+              </span>
+            </div>
           </div>
           <div className="mt-4 md:mt-0 bg-blue-50 text-blue-700 px-4 py-2 rounded-lg font-medium text-sm inline-block">
             {education.period}
