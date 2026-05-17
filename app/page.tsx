@@ -74,7 +74,7 @@ export default function Home() {
         <h1 className="text-5xl font-extrabold tracking-tight text-gray-900">
           {personalInfo.name}
         </h1>
-        <h2 className="text-2xl font-medium text-blue-600">IT Support & System Implementator</h2>
+        <h2 className="text-2xl font-medium text-blue-600">Full Stack Developer</h2>
       </header>
 
       <section className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
