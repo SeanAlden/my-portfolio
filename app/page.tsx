@@ -64,48 +64,215 @@
 //   );
 // }
 
-import { personalInfo } from '@/data/portfolio';
-import { Mail, Phone, MapPin, Link, GitBranch } from 'lucide-react';
+// import { personalInfo } from '@/data/portfolio';
+// import { Mail, Phone, MapPin, Link, GitBranch } from 'lucide-react';
+
+// export default function Home() {
+//   return (
+//     <div className="space-y-10 animate-in fade-in slide-in-from-bottom-4 duration-700">
+//       <header className="space-y-4">
+//         <h1 className="text-5xl font-extrabold tracking-tight text-gray-900">
+//           {personalInfo.name}
+//         </h1>
+//         <h2 className="text-2xl font-medium text-blue-600">Full Stack Developer</h2>
+//       </header>
+
+//       <section className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+//         <h3 className="text-lg font-semibold border-b pb-2 mb-4">Professional Summary</h3>
+//         <p className="text-gray-600 leading-relaxed text-lg">
+//           {personalInfo.summary}
+//         </p>
+//       </section>
+
+//       <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
+//         <div className="flex items-center space-x-3 text-gray-600 bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+//           <MapPin className="text-blue-500 w-5 h-5" />
+//           <span>{personalInfo.location}</span>
+//         </div>
+//         <div className="flex items-center space-x-3 text-gray-600 bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+//           <Phone className="text-blue-500 w-5 h-5" />
+//           <span>{personalInfo.phone}</span>
+//         </div>
+//         <div className="flex items-center space-x-3 text-gray-600 bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+//           <Mail className="text-blue-500 w-5 h-5" />
+//           <span>{personalInfo.email}</span>
+//         </div>
+//         <div className="flex items-center space-x-3 text-gray-600 bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+//           <Link className="text-blue-500 w-5 h-5" />
+//           <span>{personalInfo.linkedin}</span>
+//         </div>
+//         <div className="flex items-center space-x-3 text-gray-600 bg-white p-4 rounded-xl shadow-sm border border-gray-100 md:col-span-2">
+//           <GitBranch className="text-blue-500 w-5 h-5" />
+//           <span>{personalInfo.github}</span>
+//         </div>
+//       </section>
+//     </div>
+//   );
+// }
+
+import { personalInfo, experiences, education, skills } from '@/data/portfolio';
+import { Briefcase, GraduationCap, Code, Settings } from 'lucide-react';
+import FadeIn from '@/components/FadeIn';
 
 export default function Home() {
   return (
-    <div className="space-y-10 animate-in fade-in slide-in-from-bottom-4 duration-700">
-      <header className="space-y-4">
-        <h1 className="text-5xl font-extrabold tracking-tight text-gray-900">
-          {personalInfo.name}
-        </h1>
-        <h2 className="text-2xl font-medium text-blue-600">Full Stack Developer</h2>
-      </header>
+    <div className="space-y-24 pb-20 overflow-hidden">
+      
+      {/* HEADER & SUMMARY */}
+      <section className="space-y-10 mt-10">
+        <FadeIn direction="up">
+          <header className="space-y-4 text-center md:text-left">
+            <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900">
+              {personalInfo.name}
+            </h1>
+            <h2 className="text-2xl font-medium text-blue-600">Full Stack Developer</h2>
+          </header>
+        </FadeIn>
 
-      <section className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-        <h3 className="text-lg font-semibold border-b pb-2 mb-4">Professional Summary</h3>
-        <p className="text-gray-600 leading-relaxed text-lg">
-          {personalInfo.summary}
-        </p>
+        <FadeIn delay={0.2}>
+          <div className="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-gray-100">
+            <h3 className="text-xl font-bold border-b pb-4 mb-6 text-gray-900">Professional Summary</h3>
+            <p className="text-gray-600 leading-relaxed text-lg">
+              {personalInfo.summary}
+            </p>
+          </div>
+        </FadeIn>
       </section>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="flex items-center space-x-3 text-gray-600 bg-white p-4 rounded-xl shadow-sm border border-gray-100">
-          <MapPin className="text-blue-500 w-5 h-5" />
-          <span>{personalInfo.location}</span>
-        </div>
-        <div className="flex items-center space-x-3 text-gray-600 bg-white p-4 rounded-xl shadow-sm border border-gray-100">
-          <Phone className="text-blue-500 w-5 h-5" />
-          <span>{personalInfo.phone}</span>
-        </div>
-        <div className="flex items-center space-x-3 text-gray-600 bg-white p-4 rounded-xl shadow-sm border border-gray-100">
-          <Mail className="text-blue-500 w-5 h-5" />
-          <span>{personalInfo.email}</span>
-        </div>
-        <div className="flex items-center space-x-3 text-gray-600 bg-white p-4 rounded-xl shadow-sm border border-gray-100">
-          <Link className="text-blue-500 w-5 h-5" />
-          <span>{personalInfo.linkedin}</span>
-        </div>
-        <div className="flex items-center space-x-3 text-gray-600 bg-white p-4 rounded-xl shadow-sm border border-gray-100 md:col-span-2">
-          <GitBranch className="text-blue-500 w-5 h-5" />
-          <span>{personalInfo.github}</span>
+      {/* WORK EXPERIENCE */}
+      <section className="space-y-10">
+        <FadeIn direction="left">
+          <div className="flex items-center space-x-4 border-b pb-4">
+            <div className="p-3 bg-blue-50 rounded-xl">
+              <Briefcase className="w-8 h-8 text-blue-600" />
+            </div>
+            <h2 className="text-3xl font-bold text-gray-900">Work Experience</h2>
+          </div>
+        </FadeIn>
+
+        <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-gray-300 before:to-transparent">
+          {experiences.map((exp, index) => (
+            <FadeIn 
+              key={index} 
+              delay={index * 0.15}
+              direction={index % 2 === 0 ? "right" : "left"} // Bergantian dari kiri/kanan
+              className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group"
+            >
+              <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-blue-50 text-blue-600 shadow-sm shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                <div className="w-2.5 h-2.5 bg-blue-600 rounded-full"></div>
+              </div>
+              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                <div className="flex flex-col mb-4">
+                  <h3 className="text-xl font-bold text-gray-900">{exp.title}</h3>
+                  <span className="text-sm font-semibold text-blue-600 mt-1">{exp.type}</span>
+                  <span className="text-sm text-gray-500 mt-1">{exp.period}</span>
+                </div>
+                <ul className="space-y-3">
+                  {exp.points.map((point, i) => (
+                    <li key={i} className="text-gray-600 text-sm flex items-start leading-relaxed">
+                      <span className="text-blue-400 mr-3 mt-0.5">•</span>
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </FadeIn>
+          ))}
         </div>
       </section>
+
+      {/* EDUCATION & PROJECTS */}
+      <section className="space-y-12">
+        <div className="space-y-8">
+          <FadeIn direction="left">
+            <div className="flex items-center space-x-4 border-b pb-4">
+              <div className="p-3 bg-blue-50 rounded-xl">
+                <GraduationCap className="w-8 h-8 text-blue-600" />
+              </div>
+              <h2 className="text-3xl font-bold text-gray-900">Education</h2>
+            </div>
+          </FadeIn>
+          
+          <FadeIn direction="up">
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row md:items-center justify-between hover:border-blue-100 transition-colors">
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900">{education.university}</h3>
+                <div className="flex items-center gap-3 mt-2">
+                  <p className="text-lg text-gray-600">{education.degree}</p>
+                  <span className="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-md font-semibold border border-gray-200">
+                    IPK: {education.gpa}
+                  </span>
+                </div>
+              </div>
+              <div className="mt-4 md:mt-0 bg-blue-50 text-blue-700 px-5 py-2.5 rounded-xl font-semibold text-sm inline-block">
+                {education.period}
+              </div>
+            </div>
+          </FadeIn>
+        </div>
+
+        <div className="space-y-8">
+          <FadeIn direction="left">
+            <div className="flex items-center space-x-4 border-b pb-4">
+              <div className="p-3 bg-blue-50 rounded-xl">
+                <Code className="w-8 h-8 text-blue-600" />
+              </div>
+              <h2 className="text-3xl font-bold text-gray-900">Academic Projects</h2>
+            </div>
+          </FadeIn>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {education.projects.map((proj, idx) => (
+              <FadeIn key={idx} delay={idx * 0.15} direction="up" className="h-full">
+                <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full flex flex-col group cursor-pointer">
+                  <h3 className="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors">{proj.name}</h3>
+                  <div className="mt-3 mb-4">
+                    <span className="text-xs font-mono bg-blue-50 text-blue-700 px-3 py-1.5 rounded-lg font-medium">
+                      {proj.tech}
+                    </span>
+                  </div>
+                  <p className="text-sm text-gray-600 leading-relaxed flex-grow">
+                    {proj.desc}
+                  </p>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SKILLS */}
+      <section className="space-y-8">
+        <FadeIn direction="left">
+          <div className="flex items-center space-x-4 border-b pb-4">
+            <div className="p-3 bg-blue-50 rounded-xl">
+              <Settings className="w-8 h-8 text-blue-600" />
+            </div>
+            <h2 className="text-3xl font-bold text-gray-900">Skills & Expertise</h2>
+          </div>
+        </FadeIn>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {skills.map((skillGroup, index) => (
+            <FadeIn key={index} delay={index * 0.1} direction="up">
+              <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-blue-200 transition-colors h-full">
+                <h3 className="text-lg font-bold text-gray-900 mb-5">{skillGroup.category}</h3>
+                <div className="flex flex-wrap gap-2.5">
+                  {skillGroup.items.split(', ').map((skill, i) => (
+                    <span 
+                      key={i} 
+                      className="px-4 py-2 bg-gray-50 hover:bg-blue-50 text-gray-700 hover:text-blue-700 text-sm font-medium rounded-xl border border-gray-200 hover:border-blue-200 transition-colors cursor-default"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </FadeIn>
+          ))}
+        </div>
+      </section>
+
     </div>
   );
 }
