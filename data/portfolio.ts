@@ -123,14 +123,14 @@ export const education = {
       desc: "Sistem autentikasi pengguna, pemesanan kamar, dan pengelolaan data realtime yang efisien.",
       tech: ["Flutter", "Firebase", "Dart", "NoSQL"],
       githubUrl: "https://github.com/NamaSaya/booking-hotel",
-      image: "/projects/booking-hotel.jpg" // Aset lokal
+      image: "" // Aset lokal
     },
     {
       name: "ERP Kasir",
       desc: "Modul manajemen stok, transaksi kasir, dan laporan dengan dashboard monitoring terpusat.",
       tech: ["Laravel", "Nuxt 3", "Vue.js", "Flutter", "MySQL"],
       githubUrl: "https://github.com/NamaSaya/erp-kasir",
-      image: "/projects/erp-kasir.jpg"
+      image: ""
     },
     {
       name: "Online Computer Store",
