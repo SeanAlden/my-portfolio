@@ -27,9 +27,9 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-gray-200">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link href="/" className="text-xl font-bold text-gray-900 tracking-tight">
+          {/* <Link href="/" className="text-xl font-bold text-gray-900 tracking-tight">
             Portfo<span className="text-blue-600">lio.</span>
-          </Link>
+          </Link> */}
           <div className="flex space-x-6 text-sm font-medium text-gray-600">
             <Link href="/" className="hover:text-blue-600 transition">Portfolio</Link>
             <Link href="/profile" className="hover:text-blue-600 transition">Contact Profile</Link>
