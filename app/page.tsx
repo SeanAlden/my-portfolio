@@ -412,7 +412,7 @@ export default function Home() {
                   {/* Thumbnail Gambar */}
                   <div className="relative w-full h-48 bg-gray-100 overflow-hidden">
                     <Image 
-                      src={proj.image || '/default-project.jpg'} 
+                      src={proj.image || '/default-project.png'} 
                       alt={proj.name} 
                       fill 
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
