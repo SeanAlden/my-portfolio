@@ -78,14 +78,26 @@ export const personalInfo = {
   email: "emailku@gmail.com",
   linkedin: "linkedin.com/in/nama-saya-a012345m6/",
   github: "github.com/NamaSaya",
-  summary: "IT Software Engineer dengan pengalaman membangun, memelihara, dan memonitor sistem operasional berbasis web dan mobile yang digunakan dalam aktivitas bisnis harian. Terbiasa bekerja dengan REST API, database relasional, sistem real-time monitoring, troubleshooting produksi, serta support pasca-deployment. Memiliki mindset stabilitas sistem, akurasi data, dan keberlangsungan operasional—relevan untuk digitalisasi dan monitoring operasi maritim.",
+  summary: "IT Software Engineer dengan pengalaman membangun, memelihara, dan memonitor sistem operasional berbasis web dan mobile yang digunakan dalam aktivitas bisnis harian. Terbiasa bekerja dengan REST API, database relasional, sistem real-time monitoring, troubleshooting produksi, serta support pasca-deployment. Memiliki mindset stabilitas sistem, akurasi data, dan keberlangsungan operasional—relevan untuk digitalisasi dan monitoring bisnis e-commerce & retail.",
   // Tambahkan path untuk foto profil
-  photo: "/profile.jpg" 
+  photo: "/profile.png" 
 };
 
 export const experiences = [
   {
-    title: "IT Software Engineer – ERP System",
+    title: "Software Engineer",
+    type: "Contract",
+    period: "Februari 2026 – Present",
+    points: [
+      "Mengembangkan backend berperforma tinggi menggunakan Laravel dan MariaDB. Mengimplementasikan mekanisme Pessimistic Locking pada tingkat database untuk mengatasi race condition, memastikan integritas transaksi, dan mencegah kelebihan penjualan (overselling) saat lalu lintas pesanan padat.",
+      "Membangun sistem operasional khusus yang terintegrasi ke dalam platform penjualan, menampilkan sistem manajemen stok First-In-First-Out (FIFO) yang secara akurat melacak inventaris berdasarkan batch barang masuk.",
+      "Mengintegrasikan API pihak ketiga berskala enterprise seperti Xendit (Payment Gateway) dan Biteship (Logistik). Merancang logika bisnis kompleks untuk menangani edge cases, seperti pemetaan spasial otomatis dan ketersediaan pengiriman dinamis berdasarkan jam operasional kurir secara real-time.",
+      "Menciptakan antarmuka pengguna yang sangat responsif menggunakan Vue.js dan Tailwind CSS. Mengimplementasikan Optimistic UI pada sistem keranjang belanja untuk pengalaman tanpa hambatan (zero-latency), navigasi dinamis, dan fitur pencarian cerdas (Fuzzy Search).",
+      "Mengelola proses deployment end-to-end di atas server Linux VPS secara mandiri, mengonfigurasi lingkungan server untuk memastikan stabilitas, keamanan, dan ketersediaan sistem operasional secara terus-menerus.",
+    ]
+  },
+  {
+    title: "Freelance Developer – ERP System",
     type: "Freelance (Project-Based)",
     period: "Januari 2025 – Juni 2025",
     points: [
@@ -98,7 +110,7 @@ export const experiences = [
     ]
   },
   {
-    title: "Full Stack Developer",
+    title: "IT Programmer Intern",
     type: "Internship — Sentra Inovasi Kewirausahaan",
     period: "Juli 2024 – Desember 2024",
     points: [
@@ -149,7 +161,7 @@ export const skills = [
     items: [
       { name: "PHP", percentage: 85 },
       { name: "Laravel", percentage: 90 },
-      { name: "Node.js (Express)", percentage: 75 },
+      { name: "Node.js (Express)", percentage: 65 },
       { name: "REST API", percentage: 95 }
     ] 
   },
@@ -158,16 +170,16 @@ export const skills = [
     items: [
       { name: "HTML/CSS", percentage: 90 },
       { name: "JavaScript", percentage: 85 },
-      { name: "Vue.js / Nuxt 3", percentage: 80 },
-      { name: "React.js", percentage: 70 }
+      { name: "Vue.js / Nuxt 3", percentage: 85 },
+      { name: "React.js / Next.js", percentage: 75 }
     ] 
   },
   { 
     category: "Mobile Development", 
     items: [
       { name: "Flutter", percentage: 85 },
-      { name: "Kotlin (Android)", percentage: 70 },
-      { name: "Java (Android)", percentage: 75 }
+      { name: "Kotlin (Android)", percentage: 75 },
+      { name: "Java (Android)", percentage: 70 }
     ] 
   },
   { 
@@ -175,7 +187,7 @@ export const skills = [
     items: [
       { name: "MySQL", percentage: 90 },
       { name: "PostgreSQL", percentage: 80 },
-      { name: "Firebase", percentage: 85 }
+      { name: "Firebase / Supabase", percentage: 85 }
     ] 
   }
 ];

@@ -426,12 +426,24 @@ export default function Home() {
                     </p>
                     
                     {/* List Skill - Maksimal 4 per baris menggunakan Grid */}
-                    <div className="grid grid-cols-4 gap-2 mb-6">
+                    {/* <div className="grid grid-cols-4 gap-2 mb-6">
                       {proj.tech.map((techItem, techIdx) => (
                         <span 
                           key={techIdx} 
                           className="text-[10px] md:text-xs font-semibold bg-blue-50 text-blue-700 py-1.5 px-2 rounded-full text-center truncate border border-blue-100"
                           title={techItem} // Menampilkan teks penuh saat di-hover
+                        >
+                          {techItem}
+                        </span>
+                      ))}
+                    </div> */}
+                    
+                    {/* List Skill - Flex Wrap agar teks tidak terpotong dan fleksibel */}
+                    <div className="flex flex-wrap gap-2 mb-6">
+                      {proj.tech.map((techItem, techIdx) => (
+                        <span 
+                          key={techIdx} 
+                          className="text-[10px] md:text-xs font-semibold bg-blue-50 text-blue-700 py-1.5 px-3 rounded-full text-center border border-blue-100"
                         >
                           {techItem}
                         </span>
