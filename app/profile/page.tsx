@@ -81,13 +81,57 @@ export default function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   // Fungsi untuk menangani saat form dikirim
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  // const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   setIsSubmitting(true);
+
+  //   // Simulasi proses pengiriman (misal: memanggil API/Formspree/EmailJS)
+  //   // Di sini kita gunakan timeout 1.5 detik sebagai simulasi
+  //   setTimeout(() => {
+  //     setIsSubmitting(false);
+  //     setIsSubmitted(true);
+
+  //     // Mengembalikan status tombol setelah 3 detik
+  //     setTimeout(() => setIsSubmitted(false), 3000);
+
+  //     // Reset form
+  //     (e.target as HTMLFormElement).reset();
+  //   }, 1500);
+  // };
+
+  // Fungsi untuk menangani saat form dikirim
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulasi proses pengiriman (misal: memanggil API/Formspree/EmailJS)
-    // Di sini kita gunakan timeout 1.5 detik sebagai simulasi
-    setTimeout(() => {
+    // Ambil data dari form
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      phone: formData.get('phone'),
+      message: formData.get('message'),
+    };
+
+    try {
+      // Pastikan Anda sudah membuat variabel NEXT_PUBLIC_API_URL di file .env.local Next.js Anda
+      // Contoh isi .env.local: NEXT_PUBLIC_API_URL=https://portfolio-api-sean.vercel.app
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+
+      const response = await fetch(`${apiUrl}/api/api/contact`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        // Jika ada error validasi dari Laravel (422) atau error server (500)
+        throw new Error('Gagal mengirim pesan');
+      }
+
       setIsSubmitting(false);
       setIsSubmitted(true);
       
@@ -96,7 +140,12 @@ export default function Contact() {
       
       // Reset form
       (e.target as HTMLFormElement).reset();
-    }, 1500);
+      
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setIsSubmitting(false);
+      alert('Terjadi kesalahan saat mengirim pesan. Pastikan server aktif.');
+    }
   };
 
   return (
