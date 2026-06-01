@@ -68,13 +68,13 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
-// Import ikon yang dijamin aman dari error
-import { Link as LinkIcon, GitBranch, Camera, MessageCircle } from 'lucide-react'
+import Image from 'next/image'
+import { personalInfo } from '@/data/portfolio' // Mengambil data dinamis
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Sean Alden | Portfolio',
+  title: personalInfo.name,
   description: 'IT Professional Portfolio',
 }
 
@@ -84,7 +84,6 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    // Tambahkan scroll-smooth di tag html untuk mendukung navigasi anchor link
     <html lang="id" className="scroll-smooth">
       <body className={`${inter.className} bg-gray-50 text-gray-900 min-h-screen flex flex-col`}>
         <Navbar />
@@ -93,62 +92,41 @@ export default function RootLayout({
           {children}
         </main>
         
-        {/* FOOTER BARU DENGAN SOSIAL MEDIA */}
-        <footer className="w-full bg-white border-t border-gray-200 mt-auto">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+        <footer className="w-full bg-white border-t py-8 mt-auto">
+          <div className="max-w-5xl mx-auto px-4 flex flex-col items-center space-y-5">
+            
+            {/* Social Media Icons */}
+            <div className="flex items-center space-x-6">
               
-              {/* Copyright */}
-              <div className="text-sm text-gray-500 font-medium">
-                © {new Date().getFullYear()} Sean Alden. All rights reserved.
-              </div>
-
-              {/* Social Links */}
-              <div className="flex items-center space-x-6">
-                <a 
-                  href="https://github.com/SeanAlden" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-gray-900 hover:-translate-y-1 transition-all duration-300"
-                  title="GitHub"
-                >
-                  <GitBranch className="w-5 h-5" />
-                </a>
-                
-                <a 
-                  href="https://linkedin.com/in/sean-alden" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-blue-700 hover:-translate-y-1 transition-all duration-300"
-                  title="LinkedIn"
-                >
-                  <LinkIcon className="w-5 h-5" />
-                </a>
-                
-                <a 
-                  href="https://instagram.com/username_ig_anda" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-pink-600 hover:-translate-y-1 transition-all duration-300"
-                  title="Instagram"
-                >
-                  <Camera className="w-5 h-5" />
-                </a>
-                
-                <a 
-                  href="https://wa.me/6281234567890" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-green-500 hover:-translate-y-1 transition-all duration-300"
-                  title="WhatsApp"
-                >
-                  <MessageCircle className="w-5 h-5" />
-                </a>
-              </div>
-
+              {/* GitHub - Diambil dari portfolio.ts */}
+              <a href={`https://${personalInfo.github}`} target="_blank" rel="noopener noreferrer" className="hover:-translate-y-1 hover:opacity-80 transition-all duration-300">
+                <Image src="/icons/github.png" alt="GitHub" width={28} height={28} className="object-contain" />
+              </a>
+              
+              {/* LinkedIn - Diambil dari portfolio.ts */}
+              <a href={`https://${personalInfo.linkedin}`} target="_blank" rel="noopener noreferrer" className="hover:-translate-y-1 hover:opacity-80 transition-all duration-300">
+                <Image src="/icons/linkedin.png" alt="LinkedIn" width={28} height={28} className="object-contain" />
+              </a>
+              
+              {/* Instagram - Silakan ubah 'username_anda' */}
+              <a href="https://instagram.com/username_anda" target="_blank" rel="noopener noreferrer" className="hover:-translate-y-1 hover:opacity-80 transition-all duration-300">
+                <Image src="/icons/instagram.png" alt="Instagram" width={28} height={28} className="object-contain" />
+              </a>
+              
+              {/* WhatsApp - Silakan ubah format nomor menjadi 628... tanpa spasi atau plus */}
+              <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="hover:-translate-y-1 hover:opacity-80 transition-all duration-300">
+                <Image src="/icons/whatsapp.png" alt="WhatsApp" width={28} height={28} className="object-contain" />
+              </a>
+              
             </div>
+            
+            {/* Copyright Text */}
+            <p className="text-center text-sm text-gray-500 font-medium">
+              © {new Date().getFullYear()} {personalInfo.name}. All rights reserved.
+            </p>
           </div>
         </footer>
+
       </body>
     </html>
   )
