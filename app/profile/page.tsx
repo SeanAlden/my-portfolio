@@ -116,7 +116,7 @@ export default function Contact() {
     try {
       // Pastikan Anda sudah membuat variabel NEXT_PUBLIC_API_URL di file .env.local Next.js Anda
       // Contoh isi .env.local: NEXT_PUBLIC_API_URL=https://portfolio-api-sean.vercel.app
-      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
       const response = await fetch(`${apiUrl}/api/api/contact`, {
         method: 'POST',
