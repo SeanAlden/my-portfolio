@@ -29,7 +29,7 @@ export default function AdminDashboard() {
 
     try {
       // Memanggil endpoint logout Laravel dengan membawa Bearer Token
-      await fetch(`${apiUrl}/api/api/logout`, {
+      await fetch(`${apiUrl}/api/logout`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
