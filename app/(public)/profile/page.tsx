@@ -118,7 +118,7 @@ export default function Contact() {
       // Contoh isi .env.local: NEXT_PUBLIC_API_URL=https://portfolio-api-sean.vercel.app
       const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
-      const response = await fetch(`${apiUrl}/api/api/contact`, {
+      const response = await fetch(`${apiUrl}/api/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
