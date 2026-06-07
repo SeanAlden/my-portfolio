@@ -43,6 +43,7 @@ export default function AdminSidebar() {
     { name: 'Edukasi', icon: GraduationCap, path: '/admin/educations' },
     { name: 'Proyek', icon: Code, path: '/admin/projects' },
     { name: 'Personal Info', icon: Settings, path: '/admin/personal-infos' },
+    { name: 'Organization', icon: Settings, path: '/admin/' },
   ];
 
   return (
