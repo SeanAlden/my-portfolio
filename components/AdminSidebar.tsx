@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { LogOut, LayoutDashboard, Briefcase, GraduationCap, Code, MessageSquare, Settings, ListTree, Zap } from 'lucide-react';
+import { LogOut, LayoutDashboard, Briefcase, GraduationCap, Code, MessageSquare, Settings, ListTree, Zap, Building } from 'lucide-react';
 
 export default function AdminSidebar() {
   const router = useRouter();
@@ -43,7 +43,7 @@ export default function AdminSidebar() {
     { name: 'Edukasi', icon: GraduationCap, path: '/admin/educations' },
     { name: 'Proyek', icon: Code, path: '/admin/projects' },
     { name: 'Personal Info', icon: Settings, path: '/admin/personal-infos' },
-    { name: 'Organization', icon: Settings, path: '/admin/' },
+    { name: 'Organization', icon: Building, path: '/admin/organizations' },
   ];
 
   return (
