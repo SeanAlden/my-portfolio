@@ -1506,7 +1506,7 @@ export default async function Home() {
           {/* ORGANISASI & KEPANITIAAN */}
           <div className="pt-6">
             <FadeIn direction="up">
-              <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-3">
                 <Users className="w-6 h-6 text-white" />
                 Campus Organizations & Committee
               </h3>
