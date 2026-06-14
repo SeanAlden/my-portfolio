@@ -233,7 +233,7 @@ export default function Educations() {
                   required 
                   value={formData.university}
                   onChange={(e) => setFormData({ ...formData, university: e.target.value })}
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none"
+                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none text-black"
                   placeholder="Contoh: Universitas Surabaya (UBAYA) / Bangkit Academy"
                 />
               </div>
@@ -245,7 +245,7 @@ export default function Educations() {
                   required 
                   value={formData.degree}
                   onChange={(e) => setFormData({ ...formData, degree: e.target.value })}
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none"
+                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none text-black"
                   placeholder="Contoh: S1 Teknik Informatika"
                 />
               </div>
@@ -258,7 +258,7 @@ export default function Educations() {
                     required 
                     value={formData.period}
                     onChange={(e) => setFormData({ ...formData, period: e.target.value })}
-                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none text-black"
                     placeholder="Contoh: 2020 - 2024"
                   />
                 </div>
@@ -270,7 +270,7 @@ export default function Educations() {
                     required 
                     value={formData.gpa}
                     onChange={(e) => setFormData({ ...formData, gpa: e.target.value })}
-                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none text-black"
                     placeholder="Contoh: 3.85 / Distinction"
                   />
                 </div>

@@ -258,7 +258,7 @@ export default function Experiences() {
                   <input 
                     type="text" required value={formData.title}
                     onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition-all"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition-all text-black"
                     placeholder="Contoh: Senior Web Developer"
                   />
                 </div>
@@ -267,7 +267,7 @@ export default function Experiences() {
                   <input 
                     type="text" required value={formData.type}
                     onChange={(e) => setFormData({ ...formData, type: e.target.value })}
-                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition-all"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition-all text-black"
                     placeholder="Contoh: PT. Teknologi Maju / Freelance"
                   />
                 </div>
@@ -278,7 +278,7 @@ export default function Experiences() {
                 <input 
                   type="text" required value={formData.period}
                   onChange={(e) => setFormData({ ...formData, period: e.target.value })}
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition-all"
+                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition-all text-black"
                   placeholder="Contoh: Jan 2021 - Sekarang"
                 />
               </div>
@@ -299,7 +299,7 @@ export default function Experiences() {
                       <textarea
                         required value={point}
                         onChange={(e) => handlePointChange(index, e.target.value)}
-                        className="flex-1 px-4 py-2 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition-all resize-none"
+                        className="flex-1 px-4 py-2 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition-all resize-none text-black"
                         placeholder="Deskripsikan pekerjaan Anda..."
                         rows={2}
                       />

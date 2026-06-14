@@ -242,7 +242,7 @@ export default function Skills() {
                   required 
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none"
+                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none text-black"
                   placeholder="Contoh: Laravel, React, Docker"
                 />
               </div>
@@ -253,7 +253,7 @@ export default function Skills() {
                   required 
                   value={formData.skill_category_id}
                   onChange={(e) => setFormData({ ...formData, skill_category_id: e.target.value })}
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none"
+                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none text-black"
                 >
                   <option value="" disabled>-- Pilih Kategori --</option>
                   {categories.map((cat) => (
@@ -271,7 +271,7 @@ export default function Skills() {
                   max="100"
                   value={formData.percentage}
                   onChange={(e) => setFormData({ ...formData, percentage: e.target.value })}
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none"
+                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none text-black"
                   placeholder="Contoh: 85"
                 />
               </div>

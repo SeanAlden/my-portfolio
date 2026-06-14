@@ -275,7 +275,7 @@ export default function Organizations() {
                   <input 
                     type="text" required value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none text-black"
                     placeholder="Contoh: BEM Fakultas Teknik"
                   />
                 </div>
@@ -284,7 +284,7 @@ export default function Organizations() {
                   <input 
                     type="text" required value={formData.role}
                     onChange={(e) => setFormData({ ...formData, role: e.target.value })}
-                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none text-black"
                     placeholder="Contoh: Ketua Divisi IT"
                   />
                 </div>
@@ -296,7 +296,7 @@ export default function Organizations() {
                   <select 
                     required value={formData.education_id}
                     onChange={(e) => setFormData({ ...formData, education_id: e.target.value })}
-                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none text-black"
                   >
                     <option value="" disabled>-- Pilih Institusi Edukasi --</option>
                     {educations.map((edu) => (
@@ -309,7 +309,7 @@ export default function Organizations() {
                   <input 
                     type="text" required value={formData.period}
                     onChange={(e) => setFormData({ ...formData, period: e.target.value })}
-                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none text-black"
                     placeholder="Contoh: Jan 2022 - Des 2023"
                   />
                 </div>
@@ -330,7 +330,7 @@ export default function Organizations() {
                       <textarea
                         required rows={2} value={point}
                         onChange={(e) => handlePointChange(index, e.target.value)}
-                        className="flex-1 px-4 py-2 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none resize-none"
+                        className="flex-1 px-4 py-2 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none resize-none text-black"
                         placeholder="Contoh: Memimpin tim beranggotakan 5 orang dalam mendevelop..."
                       />
                       <button type="button" onClick={() => removePoint(index)} className="p-2.5 text-red-500 hover:bg-red-50 rounded-xl transition mt-0.5" title="Hapus Poin">
