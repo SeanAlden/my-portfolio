@@ -181,11 +181,11 @@ export default function EditProject() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label className="block text-sm font-bold text-gray-700 mb-2">Nama Proyek</label>
-                <input type="text" required value={name} onChange={(e) => setName(e.target.value)} className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none" />
+                <input type="text" required value={name} onChange={(e) => setName(e.target.value)} className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none text-black" />
               </div>
               <div>
                 <label className="block text-sm font-bold text-gray-700 mb-2">Institusi Terkait (Opsional)</label>
-                <select value={educationId} onChange={(e) => setEducationId(e.target.value)} className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
+                <select value={educationId} onChange={(e) => setEducationId(e.target.value)} className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none text-black">
                   <option value="">-- Proyek Pribadi --</option>
                   {educations.map((edu) => (
                     <option key={edu.id} value={edu.id}>{edu.university}</option>
@@ -196,7 +196,7 @@ export default function EditProject() {
 
             <div>
               <label className="block text-sm font-bold text-gray-700 mb-2">Deskripsi Proyek</label>
-              <textarea required rows={4} value={desc} onChange={(e) => setDesc(e.target.value)} className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none resize-none" />
+              <textarea required rows={4} value={desc} onChange={(e) => setDesc(e.target.value)} className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none resize-none text-black" />
             </div>
 
             <div className="p-6 bg-gray-50 rounded-2xl border border-gray-100">
@@ -207,7 +207,7 @@ export default function EditProject() {
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                 {tech.map((t, index) => (
                   <div key={index} className="flex space-x-2">
-                    <input type="text" required value={t} onChange={(e) => handleTechChange(index, e.target.value)} className="flex-1 px-3 py-2 bg-white border border-gray-200 rounded-lg outline-none focus:ring-2 focus:ring-blue-500" />
+                    <input type="text" required value={t} onChange={(e) => handleTechChange(index, e.target.value)} className="flex-1 px-3 py-2 bg-white border border-gray-200 rounded-lg outline-none focus:ring-2 focus:ring-blue-500 text-black" />
                     <button type="button" onClick={() => setTech(tech.filter((_, i) => i !== index))} className="text-red-500 hover:bg-red-50 p-2 rounded-lg transition"><MinusCircle className="w-5 h-5" /></button>
                   </div>
                 ))}
@@ -222,8 +222,8 @@ export default function EditProject() {
               <div className="space-y-3">
                 {githubUrls.map((item, index) => (
                   <div key={index} className="flex space-x-2">
-                    <input type="text" required value={item.label} onChange={(e) => handleGithubChange(index, 'label', e.target.value)} className="w-1/3 px-3 py-2 bg-white border border-gray-200 rounded-lg outline-none" />
-                    <input type="url" required value={item.url} onChange={(e) => handleGithubChange(index, 'url', e.target.value)} className="flex-1 px-3 py-2 bg-white border border-gray-200 rounded-lg outline-none" />
+                    <input type="text" required value={item.label} onChange={(e) => handleGithubChange(index, 'label', e.target.value)} className="w-1/3 px-3 py-2 bg-white border border-gray-200 rounded-lg outline-none text-black" />
+                    <input type="url" required value={item.url} onChange={(e) => handleGithubChange(index, 'url', e.target.value)} className="flex-1 px-3 py-2 bg-white border border-gray-200 rounded-lg outline-none text-black" />
                     <button type="button" onClick={() => setGithubUrls(githubUrls.filter((_, i) => i !== index))} className="text-red-500 hover:bg-red-50 p-2 rounded-lg transition"><MinusCircle className="w-5 h-5" /></button>
                   </div>
                 ))}

@@ -191,7 +191,7 @@ export default function CreateProject() {
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                 {tech.map((t, index) => (
                   <div key={index} className="flex space-x-2">
-                    <input type="text" required value={t} onChange={(e) => handleTechChange(index, e.target.value)} placeholder="Ex: React" className="flex-1 px-3 py-2 bg-white border border-gray-200 rounded-lg outline-none focus:ring-2 focus:ring-blue-500" />
+                    <input type="text" required value={t} onChange={(e) => handleTechChange(index, e.target.value)} placeholder="Ex: React" className="flex-1 px-3 py-2 bg-white border border-gray-200 rounded-lg outline-none focus:ring-2 focus:ring-blue-500 text-black" />
                     <button type="button" onClick={() => setTech(tech.filter((_, i) => i !== index))} className="text-red-500 hover:bg-red-50 p-2 rounded-lg transition"><MinusCircle className="w-5 h-5" /></button>
                   </div>
                 ))}
