@@ -289,7 +289,7 @@ export default function AdminSidebar() {
     { name: 'Pengalaman', icon: Briefcase, path: '/admin/experiences' },
     { name: 'Edukasi', icon: GraduationCap, path: '/admin/educations' },
     { name: 'Proyek', icon: Code, path: '/admin/projects' },
-    { name: 'Personal Info', icon: Settings, path: '/admin/personal-infos' },
+    // { name: 'Personal Info', icon: Settings, path: '/admin/personal-infos' },
     { name: 'Organisasi', icon: Building, path: '/admin/organizations' },
   ];
 
