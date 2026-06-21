@@ -157,8 +157,8 @@ export default function Contact() {
           <div className="inline-flex justify-center items-center w-20 h-20 bg-blue-50 rounded-full text-blue-600 mb-2">
             <MessageSquare className="w-10 h-10" />
           </div>
-          <h1 className="text-4xl font-bold text-gray-900">Contact Me</h1>
-          <p className="text-lg text-gray-600">
+          <h1 className="text-4xl font-bold text-white">Contact Me</h1>
+          <p className="text-lg text-gray-300">
             Punya pertanyaan atau tawaran kolaborasi? Jangan ragu untuk mengirim pesan kepada saya melalui formulir di bawah ini.
           </p>
         </div>
@@ -225,7 +225,7 @@ export default function Contact() {
                   name="name" 
                   required
                   placeholder="Masukkan nama Anda"
-                  className="w-full px-5 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+                  className="w-full px-5 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all text-black"
                 />
               </div>
 
@@ -241,7 +241,7 @@ export default function Contact() {
                     name="email" 
                     required
                     placeholder="nama@email.com"
-                    className="w-full px-5 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+                    className="w-full px-5 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all text-black"
                   />
                 </div>
 
@@ -255,7 +255,7 @@ export default function Contact() {
                     id="phone" 
                     name="phone" 
                     placeholder="Contoh: 08123456789"
-                    className="w-full px-5 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+                    className="w-full px-5 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all text-black"
                   />
                 </div>
               </div>
@@ -271,7 +271,7 @@ export default function Contact() {
                   required
                   rows={5}
                   placeholder="Tuliskan detail tawaran, pertanyaan, atau pesan Anda di sini..."
-                  className="w-full px-5 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all resize-none"
+                  className="w-full px-5 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all resize-none text-black"
                 ></textarea>
               </div>
 
