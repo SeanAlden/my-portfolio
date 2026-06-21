@@ -149,17 +149,17 @@ export default function AdminProfile() {
               <div className="space-y-6">
                 <div>
                   <label className="block text-sm font-bold text-gray-700 mb-2 flex items-center"><User className="w-4 h-4 mr-2 text-gray-400" /> Nama Lengkap</label>
-                  <input type="text" required value={name} onChange={(e) => setName(e.target.value)} className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none" />
+                  <input type="text" required value={name} onChange={(e) => setName(e.target.value)} className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none text-black" />
                 </div>
                 
                 <div>
                   <label className="block text-sm font-bold text-gray-700 mb-2 flex items-center"><Briefcase className="w-4 h-4 mr-2 text-gray-400" /> Peran / Jabatan (Role)</label>
-                  <input type="text" value={role} onChange={(e) => setRole(e.target.value)} placeholder="Contoh: IT Software Engineer" className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none" />
+                  <input type="text" value={role} onChange={(e) => setRole(e.target.value)} placeholder="Contoh: IT Software Engineer" className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none text-black" />
                 </div>
 
                 <div>
                   <label className="block text-sm font-bold text-gray-700 mb-2 flex items-center"><FileText className="w-4 h-4 mr-2 text-gray-400" /> Deskripsi Singkat</label>
-                  <textarea rows={4} value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Tuliskan sedikit tentang diri Anda..." className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none resize-none" />
+                  <textarea rows={4} value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Tuliskan sedikit tentang diri Anda..." className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none resize-none text-black" />
                 </div>
               </div>
 
