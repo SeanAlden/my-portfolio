@@ -413,29 +413,29 @@ export const education = {
       desc: "Sistem autentikasi pengguna, pemesanan kamar, dan pengelolaan data realtime yang efisien.",
       tech: ["Flutter", "Firebase", "Dart", "NoSQL"],
       githubUrls: [
-        { label: "Mobile App (Flutter)", url: "https://github.com/SeanAlden/booking-hotel" }
+        { label: "Mobile App (Flutter)", url: "https://github.com/SeanAlden/hotel_booking_app_project" }
       ],
-      image: "" 
+      image: "images/hotel_booking_app.png" 
     },
     {
       name: "ERP Kasir",
       desc: "Modul manajemen stok, transaksi kasir, dan laporan dengan dashboard monitoring terpusat.",
       tech: ["Laravel", "Nuxt 3", "Vue.js", "Flutter", "MySQL"],
       githubUrls: [
-        { label: "Backend API", url: "https://github.com/SeanAlden/erp-kasir-api" },
-        { label: "Frontend Web", url: "https://github.com/SeanAlden/erp-kasir-web" },
-        { label: "Mobile App", url: "https://github.com/SeanAlden/erp-kasir-mobile" }
+        { label: "Backend API", url: "https://github.com/SeanAlden/BACKEND_TUGAS_AKHIR_C14210052" },
+        { label: "Frontend Web", url: "https://github.com/SeanAlden/FRONTEND_WEBSITE_C14210052" },
+        { label: "Mobile App", url: "https://github.com/SeanAlden/FRONTEND_MOBILE_C14210052/tree/main" }
       ],
-      image: ""
+      image: "images/thesis_app.png"
     },
     {
       name: "Online Computer Store",
       desc: "Aplikasi e-commerce dengan integrasi payment gateway Midtrans dan dashboard admin lengkap.",
       tech: ["Laravel", "Midtrans", "PHP", "Bootstrap"],
       githubUrls: [
-        { label: "Web App & Backend", url: "https://github.com/SeanAlden/computer-store" }
+        { label: "Web App & Backend", url: "https://github.com/SeanAlden/computer-online-shop" }
       ],
-      image: "" 
+      image: "images/computer_shop.png" 
     }
   ]
 };
