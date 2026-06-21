@@ -445,6 +445,15 @@ export const education = {
         { label: "Mobile App", url: "https://github.com/SeanAlden/cashier-app/tree/master" }
       ],
       image: "images/cashier_app.png" 
+    },
+    {
+      name: "Freelancer App",
+      desc: "Aplikasi penyedia jasa freelancer dengan integrasi Midtrans Payment Gateway, Pusher, serta dashboard Admin.",
+      tech: ["Flutter, Laravel, Midtrans, Pusher, cPanel"],
+      githubUrls: [
+        { label: "Mobile App", url: "https://github.com/SeanAlden/cashier-app/tree/master" }
+      ],
+      image: "images/freelancer_app.png" 
     }
   ]
 };
