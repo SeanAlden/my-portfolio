@@ -451,7 +451,7 @@ export const education = {
       desc: "Aplikasi penyedia jasa freelancer dengan integrasi Midtrans Payment Gateway, Pusher, serta dashboard Admin.",
       tech: ["Flutter, Laravel, Midtrans, Pusher, cPanel"],
       githubUrls: [
-        { label: "Mobile App", url: "https://github.com/SeanAlden/cashier-app/tree/master" }
+        { label: "Mobile App", url: "https://github.com/SeanAlden/freelancer-app-clone" }
       ],
       image: "images/freelancer_app.png" 
     }
