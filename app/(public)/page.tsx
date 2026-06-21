@@ -1032,7 +1032,7 @@ export default function Home() {
             </div>
 
             <header className="space-y-4 text-center md:text-left flex-grow mt-4 md:mt-6">
-              <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900">
+              <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-white">
                 {personalInfo.name}
               </h1>
               <h2 className="text-2xl font-medium text-blue-600">IT Software Engineer</h2>
@@ -1099,7 +1099,7 @@ export default function Home() {
             <div className="p-3 bg-blue-50 rounded-xl">
               <Briefcase className="w-8 h-8 text-blue-600" />
             </div>
-            <h2 className="text-3xl font-bold text-gray-900">Work Experience</h2>
+            <h2 className="text-3xl font-bold text-white">Work Experience</h2>
           </div>
         </FadeIn>
 
@@ -1142,7 +1142,7 @@ export default function Home() {
               <div className="p-3 bg-blue-50 rounded-xl">
                 <GraduationCap className="w-8 h-8 text-blue-600" />
               </div>
-              <h2 className="text-3xl font-bold text-gray-900">Education & Organizations</h2>
+              <h2 className="text-3xl font-bold text-white">Education & Organizations</h2>
             </div>
           </FadeIn>
 
@@ -1167,7 +1167,7 @@ export default function Home() {
           <div className="pt-6">
             <FadeIn direction="up">
               <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-                <Users className="w-6 h-6 text-blue-600" />
+                <Users className="w-6 h-6 text-white" />
                 Campus Organizations & Committee
               </h3>
             </FadeIn>
@@ -1208,7 +1208,7 @@ export default function Home() {
             <div className="p-3 bg-blue-50 rounded-xl">
               <Code className="w-8 h-8 text-blue-600" />
             </div>
-            <h2 className="text-3xl font-bold text-gray-900">Academic Projects</h2>
+            <h2 className="text-3xl font-bold text-white">Academic Projects</h2>
           </div>
         </FadeIn>
 
@@ -1271,7 +1271,7 @@ export default function Home() {
             <div className="p-3 bg-blue-50 rounded-xl">
               <Settings className="w-8 h-8 text-blue-600" />
             </div>
-            <h2 className="text-3xl font-bold text-gray-900">Skills & Expertise</h2>
+            <h2 className="text-3xl font-bold text-white">Skills & Expertise</h2>
           </div>
         </FadeIn>
 
