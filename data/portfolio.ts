@@ -436,6 +436,15 @@ export const education = {
         { label: "Web App & Backend", url: "https://github.com/SeanAlden/computer-online-shop" }
       ],
       image: "images/computer_shop.png" 
+    },
+    {
+      name: "Cashier & Product Management App",
+      desc: "Sistem manajemen produk, stok, supplier, melihat inventaris, serta sistem kasir.",
+      tech: ["Kotlin, XML, Firebase"],
+      githubUrls: [
+        { label: "Mobile App", url: "https://github.com/SeanAlden/cashier-app/tree/master" }
+      ],
+      image: "images/cashier_app.png" 
     }
   ]
 };
