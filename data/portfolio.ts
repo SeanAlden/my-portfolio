@@ -440,7 +440,7 @@ export const education = {
     {
       name: "Cashier & Product Management App",
       desc: "Sistem manajemen produk, stok, supplier, melihat inventaris, serta sistem kasir.",
-      tech: ["Kotlin, XML, Firebase"],
+      tech: ["Kotlin", "XML", "Firebase"],
       githubUrls: [
         { label: "Mobile App", url: "https://github.com/SeanAlden/cashier-app/tree/master" }
       ],
@@ -449,7 +449,7 @@ export const education = {
     {
       name: "Freelancer App",
       desc: "Aplikasi penyedia jasa freelancer dengan integrasi Midtrans Payment Gateway, Pusher, serta dashboard Admin.",
-      tech: ["Flutter, Laravel, Midtrans, Pusher, cPanel"],
+      tech: ["Flutter", "Laravel", "Midtrans", "Pusher", "cPanel"],
       githubUrls: [
         { label: "Mobile App", url: "https://github.com/SeanAlden/freelancer-app-clone" }
       ],
