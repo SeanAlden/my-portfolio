@@ -454,6 +454,15 @@ export const education = {
         { label: "Mobile App", url: "https://github.com/SeanAlden/freelancer-app-clone" }
       ],
       image: "images/freelancer_app.png" 
+    },
+    {
+      name: "Todo List App",
+      desc: "Aplikasi Todo List untuk mencatat jadwal pekerjaan atau tugas yang akan dikerjakan serta untuk menandai hal yang sudah di selesaikan",
+      tech: ["Flutter", "Supabase", "Dart", "NoSQL"],
+      githubUrls: [
+        { label: "Mobile App", url: "https://github.com/SeanAlden/todolist-app-flutter" }
+      ],
+      image: "images/todo_app.png" 
     }
   ]
 };
