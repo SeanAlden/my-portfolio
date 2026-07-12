@@ -327,7 +327,7 @@ export const personalInfo = {
   email: "sa2596491@gmail.com",
   linkedin: "linkedin.com/in/sean-alden",
   github: "github.com/SeanAlden",
-  summary: "IT Software Engineer dengan pengalaman membangun, memelihara, dan memonitor sistem operasional berbasis web dan mobile yang digunakan dalam aktivitas bisnis harian. Terbiasa bekerja dengan REST API, database relasional, sistem real-time monitoring, troubleshooting produksi, serta support pasca-deployment. Memiliki mindset stabilitas sistem, akurasi data, dan keberlangsungan operasional—relevan untuk digitalisasi dan monitoring bisnis e-commerce & retail.",
+  summary: "Software Engineer dengan pengalaman membangun, memelihara, dan memonitor sistem operasional berbasis web dan mobile yang digunakan dalam aktivitas bisnis harian. Terbiasa bekerja dengan REST API, database relasional, sistem real-time monitoring, troubleshooting produksi, serta support pasca-deployment. Memiliki mindset stabilitas sistem, akurasi data, dan keberlangsungan operasional—relevan untuk digitalisasi dan monitoring bisnis e-commerce & retail.",
   photo: "/profile.png" 
 };
 
@@ -409,13 +409,14 @@ export const education = {
   ],
   projects: [
     {
-      name: "Booking Hotel App",
-      desc: "Sistem autentikasi pengguna, pemesanan kamar, dan pengelolaan data realtime yang efisien.",
-      tech: ["Flutter", "Firebase", "Dart", "NoSQL"],
+      name: "Solher",
+      desc: "Sebuah platform e-commerce dan manajemen klinik kecantikan komprehensif yang dirancang dengan arsitektur multi-currency, mengintegrasikan transaksi B2C/B2B secara real-time, manajemen stok gudang cerdas, penjadwalan treatment, serta modul afiliasi terotomatisasi dalam satu ekosistem digital terpadu.",
+      tech: ["Vue.js", "Tailwind CSS", "Leaflet", "Laravel", "MySQL", "Laravel Sanctum", "Amazon S3 (AWS)", "Biteship", "Xendit", "Nominatim OpenStreetMap API", "MyMemory Translation API"],
       githubUrls: [
-        { label: "Mobile App (Flutter)", url: "https://github.com/SeanAlden/hotel_booking_app_project" }
+        { label: "Backend", url: "https://github.com/IT-Great/Backend-Solher" },
+        { label: "Frontend", url: "https://github.com/IT-Great/Solherbag" },
       ],
-      image: "images/hotel_booking_app.png" 
+      image: "images/solher.png" 
     },
     {
       name: "ERP Kasir",
@@ -427,6 +428,24 @@ export const education = {
         { label: "Mobile App", url: "https://github.com/SeanAlden/FRONTEND_MOBILE_C14210052/tree/main" }
       ],
       image: "images/thesis_app.png"
+    },
+        {
+      name: "Todo List App",
+      desc: "Aplikasi Todo List untuk mencatat jadwal pekerjaan atau tugas yang akan dikerjakan serta untuk menandai hal yang sudah di selesaikan",
+      tech: ["Flutter", "Supabase", "Dart", "NoSQL"],
+      githubUrls: [
+        { label: "Mobile App", url: "https://github.com/SeanAlden/todolist-app-flutter" }
+      ],
+      image: "images/todo_app.png" 
+    },
+    {
+      name: "Booking Hotel App",
+      desc: "Sistem autentikasi pengguna, pemesanan kamar, dan pengelolaan data realtime yang efisien.",
+      tech: ["Flutter", "Firebase", "Dart", "NoSQL"],
+      githubUrls: [
+        { label: "Mobile App (Flutter)", url: "https://github.com/SeanAlden/hotel_booking_app_project" }
+      ],
+      image: "images/hotel_booking_app.png" 
     },
     {
       name: "Online Computer Store",
@@ -454,25 +473,6 @@ export const education = {
         { label: "Mobile App", url: "https://github.com/SeanAlden/freelancer-app-clone" }
       ],
       image: "images/freelancer_app.png" 
-    },
-    {
-      name: "Todo List App",
-      desc: "Aplikasi Todo List untuk mencatat jadwal pekerjaan atau tugas yang akan dikerjakan serta untuk menandai hal yang sudah di selesaikan",
-      tech: ["Flutter", "Supabase", "Dart", "NoSQL"],
-      githubUrls: [
-        { label: "Mobile App", url: "https://github.com/SeanAlden/todolist-app-flutter" }
-      ],
-      image: "images/todo_app.png" 
-    },
-    {
-      name: "Solher",
-      desc: "Sebuah platform e-commerce dan manajemen klinik kecantikan komprehensif yang dirancang dengan arsitektur multi-currency, mengintegrasikan transaksi B2C/B2B secara real-time, manajemen stok gudang cerdas, penjadwalan treatment, serta modul afiliasi terotomatisasi dalam satu ekosistem digital terpadu.",
-      tech: ["Vue.js", "Tailwind CSS", "Leaflet", "Laravel", "MySQL", "Laravel Sanctum", "Amazon S3 (AWS)", "Biteship", "Xendit", "Nominatim OpenStreetMap API", "MyMemory Translation API"],
-      githubUrls: [
-        { label: "Backend", url: "https://github.com/IT-Great/Backend-Solher" },
-        { label: "Frontend", url: "https://github.com/IT-Great/Solherbag" },
-      ],
-      image: "images/solher.png" 
     },
   ]
 };

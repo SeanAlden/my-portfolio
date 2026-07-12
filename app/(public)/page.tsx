@@ -1035,7 +1035,7 @@ export default function Home() {
               <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-white">
                 {personalInfo.name}
               </h1>
-              <h2 className="text-2xl font-medium text-blue-600">IT Software Engineer</h2>
+              <h2 className="text-2xl font-medium text-blue-600">Software Engineer</h2>
             </header>
           </div>
         </FadeIn>
