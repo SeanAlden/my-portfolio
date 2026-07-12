@@ -463,7 +463,17 @@ export const education = {
         { label: "Mobile App", url: "https://github.com/SeanAlden/todolist-app-flutter" }
       ],
       image: "images/todo_app.png" 
-    }
+    },
+    {
+      name: "Solher",
+      desc: "Sebuah platform e-commerce dan manajemen klinik kecantikan komprehensif yang dirancang dengan arsitektur multi-currency, mengintegrasikan transaksi B2C/B2B secara real-time, manajemen stok gudang cerdas, penjadwalan treatment, serta modul afiliasi terotomatisasi dalam satu ekosistem digital terpadu.",
+      tech: ["Vue.js", "Tailwind CSS", "Leaflet", "Laravel", "MySQL", "Laravel Sanctum", "Amazon S3 (AWS)", "Biteship", "Xendit", "Nominatim OpenStreetMap API", "MyMemory Translation API"],
+      githubUrls: [
+        { label: "Backend", url: "https://github.com/IT-Great/Backend-Solher" },
+        { label: "Frontend", url: "https://github.com/IT-Great/Solherbag" },
+      ],
+      image: "images/solher.png" 
+    },
   ]
 };
 
