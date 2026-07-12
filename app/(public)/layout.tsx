@@ -109,12 +109,12 @@ export default function RootLayout({
               </a>
               
               {/* Instagram - Silakan ubah 'username_anda' */}
-              <a href="https://instagram.com/username_anda" target="_blank" rel="noopener noreferrer" className="hover:-translate-y-1 hover:opacity-80 transition-all duration-300">
+              <a href={`https://${personalInfo.instagram}`} target="_blank" rel="noopener noreferrer" className="hover:-translate-y-1 hover:opacity-80 transition-all duration-300">
                 <Image src="/icons/instagram.png" alt="Instagram" width={28} height={28} className="object-contain" />
               </a>
               
               {/* WhatsApp - Silakan ubah format nomor menjadi 628... tanpa spasi atau plus */}
-              <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="hover:-translate-y-1 hover:opacity-80 transition-all duration-300">
+              <a href={`https://wa.me/${personalInfo.phone}`} target="_blank" rel="noopener noreferrer" className="hover:-translate-y-1 hover:opacity-80 transition-all duration-300">
                 <Image src="/icons/whatsapp.png" alt="WhatsApp" width={28} height={28} className="object-contain" />
               </a>
               

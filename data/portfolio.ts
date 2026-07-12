@@ -323,9 +323,10 @@
 export const personalInfo = {
   name: "Sean Alden",
   location: "Surabaya, Jawa Timur",
-  phone: "0896-6994-3044",
+  phone: "6289669943044",
   email: "sa2596491@gmail.com",
   linkedin: "linkedin.com/in/sean-alden",
+  instagram: "instagram.com/seanalden7",
   github: "github.com/SeanAlden",
   summary: "Software Engineer dengan pengalaman membangun, memelihara, dan memonitor sistem operasional berbasis web dan mobile yang digunakan dalam aktivitas bisnis harian. Terbiasa bekerja dengan REST API, database relasional, sistem real-time monitoring, troubleshooting produksi, serta support pasca-deployment. Memiliki mindset stabilitas sistem, akurasi data, dan keberlangsungan operasional—relevan untuk digitalisasi dan monitoring bisnis e-commerce & retail.",
   photo: "/profile.png" 
